@@ -6,6 +6,7 @@ from elasticsearch import Elasticsearch
 from elasticsearch.helpers import bulk
 from dateutil import parser
 
+
 class ElasticObj:
     def __init__(self, mongo_url, mongo_db, collection, index_name, index_type, es_ip):
         '''
@@ -276,6 +277,7 @@ class ElasticObj:
             return num
         else:
             return 82
+
 
 obj = ElasticObj("106.14.176.62:27017", "zhejiang", "sheng", "zhejiang", "sheng", "http://47.98.210.22:9200")
 obj.create_index()
