@@ -273,13 +273,13 @@ class ElasticObj:
     def fl(num):
         if num == 8:
             return 80
-        elif num >=75 and num <=82:
+        elif (num >= 75) and (num <= 82):
             return num
         else:
             return 82
 
 
-obj = ElasticObj("106.14.176.62:27017", "zhejiang", "sheng", "zhejiang", "sheng", "http://47.98.210.22:9200")
+obj = ElasticObj("106.14.176.62:27017", "zhejiang", "200k_300k_test", "zhejiang_1130", "sheng", "http://47.98.210.22:9200")
 obj.create_index()
 obj.bulk_Index_Data()
 
